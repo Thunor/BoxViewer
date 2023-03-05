@@ -8,7 +8,7 @@
 import Foundation
 import SceneKit
 
-func SetupStellarScene(scene: SCNScene) {
+func SetupStellarScene(scene: SCNScene, animate: Bool = true) {
   let pObj = OrbitalElements(position: SCNVector3(x: 0, y: 0, z: 0), eccentricity: 0.0, semiMajAxis: 0.2, inclination: 20.0, lngAscNode: 270.0, argOfPeriapsis: 90.0, trueAnomaly: 56.0)
   let sObj = OrbitalElements(position: SCNVector3(x: 0, y: 0, z: 0), eccentricity: 0.0, semiMajAxis: 2.0, inclination: 20.0, lngAscNode: 270.0, argOfPeriapsis: 90.0, trueAnomaly: (45 + 180))
   
@@ -39,23 +39,26 @@ func SetupStellarScene(scene: SCNScene) {
   // longitude of ascending node
   systemNode.eulerAngles.y = Float(deg2rad(pObj.lngAscNode))
   
-  // Primary orbit
-  let pOrbitAction = SCNAction.customAction(duration: 10.0) { node, interval in
-    let theta = ((interval / 10.0) * 360) - 180
-    node.position = getPointOnEllipse(θ: theta, semiMajAxis: pObj.semiMajAxis, e: pObj.eccentricity) // 0.3, 0.2
+  if animate {
+    // Primary orbit
+    let pOrbitAction = SCNAction.customAction(duration: 10.0) { node, interval in
+      let theta = ((interval / 10.0) * 360) - 180
+      node.position = getPointOnEllipse(θ: theta, semiMajAxis: pObj.semiMajAxis, e: pObj.eccentricity) // 0.3, 0.2
+    }
+    let pOrbitSequence = SCNAction.sequence([pOrbitAction])
+    let pOrbitLoop = SCNAction.repeatForever(pOrbitSequence)
+    primaryNode.runAction(pOrbitLoop)
+    //  primaryNode.removeAllActions()
+    
+    // Secondary orbit
+    let sOrbitAction = SCNAction.customAction(duration: 10.0) { node, interval in
+      let theta = (interval / 10.0) * 360
+      node.position = getPointOnEllipse(θ: theta, semiMajAxis: sObj.semiMajAxis, e: sObj.eccentricity) // 2.0, 0.4
+    }
+    let sOrbitSequence = SCNAction.sequence([sOrbitAction])
+    let sOrbitLoop = SCNAction.repeatForever(sOrbitSequence)
+    secondaryNode.runAction(sOrbitLoop)
   }
-  let pOrbitSequence = SCNAction.sequence([pOrbitAction])
-  let pOrbitLoop = SCNAction.repeatForever(pOrbitSequence)
-  //    primaryNode.runAction(pOrbitLoop)
-  
-  // Secondary orbit
-  let sOrbitAction = SCNAction.customAction(duration: 10.0) { node, interval in
-    let theta = (interval / 10.0) * 360
-    node.position = getPointOnEllipse(θ: theta, semiMajAxis: sObj.semiMajAxis, e: sObj.eccentricity) // 2.0, 0.4
-  }
-  let sOrbitSequence = SCNAction.sequence([sOrbitAction])
-  let sOrbitLoop = SCNAction.repeatForever(sOrbitSequence)
-  //    secondaryNode.runAction(sOrbitLoop)
   
   // set the background color of the scene to black
   scene.background.contents = UIColor.black
