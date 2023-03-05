@@ -12,12 +12,10 @@ import SceneKit
 func getPointOnEllipse(θ: Double, semiMajAxis: Double, e: Double) -> SCNVector3 {
   
   let a = semiMajAxis - (semiMajAxis * e)
-  
-  // r(θ) = (a * ( 1 - e * e)) / (1 + e Cos θ)
   let theta = deg2rad(θ)
   let r = (a * (1 - e * e)) / (1 + e * cos(theta))
   let x = r * cos(theta)
   let y = r * sin(theta)
-//  let z =
+
   return SCNVector3(x: Float(x), y: Float(y), z: 0)
 }

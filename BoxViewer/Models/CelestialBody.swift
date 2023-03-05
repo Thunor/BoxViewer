@@ -10,9 +10,9 @@
 import Foundation
 import SceneKit
 
-struct CelestialBody {
+struct OrbitalElements {
   /// Angles are in degrees
-  var position: SCNVector3
+  var position: SCNVector3  // REMOVE and use Xg/Yg/Zg in StarSystem
   var eccentricity: Double      // eccentricity of the ellipse
   var semiMajAxis: Double       // sum of the periapsis and apoapsis divided by two
                                 // measured from the center of the body to the center of mass of both bodies
@@ -22,4 +22,12 @@ struct CelestialBody {
   var argOfPeriapsis: Double    // angle - orients the ellipse (rotates in its own plane) measured from the ascending node to
                                 //          the periapsis.
   var trueAnomaly: Double       // angle - defines the position of the object along the ellipse at a specific time or epoch
+}
+
+struct StarSystem: Codable, Equatable {
+  var id: String?
+  var name: String?
+  var Xg: Double?
+  var Yg: Double?
+  var Zg: Double?
 }
