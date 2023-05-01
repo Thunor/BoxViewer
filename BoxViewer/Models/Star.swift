@@ -64,7 +64,7 @@ struct Star: Codable {
   init() {
     //
   }
-  
+    
   init(from decoder: Decoder) throws {
     let values = try decoder.container(keyedBy: CodingKeys.self)
     position = try values.decode(SCNVector3.self, forKey: .position)
@@ -105,6 +105,7 @@ struct Star: Codable {
 }
 
 extension Star: CustomDebugStringConvertible {
+    /// The debug string for the struct.
     var debugDescription: String {
       return "\(spectralClass ?? .M)\(subClass ?? 5)\(stellarType ?? .V) \(mass ?? 0) \(innerLimit ?? 0) \(bioZoneInner ?? 0) \(bioZoneOuter ?? 0) \(radius ?? 0) \(position?.x ?? 0), \(position?.y ?? 0), \(position?.z ?? 0)\n"
     }

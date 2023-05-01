@@ -11,7 +11,6 @@ import SwiftUI
 import SceneKit
 import Foundation
 import UIKit
-//import AppKit
 
 
 struct ScenekitView: UIViewRepresentable {
@@ -45,6 +44,7 @@ struct ScenekitView: UIViewRepresentable {
   }
 }
 
+/// Support for mouse actions that I haven't implemented yet.
 class RightClickableSCNView: SCNView {
 //  override func mouseDown(with theEvent: NSEvent) {
 //    //        print("left mouse")

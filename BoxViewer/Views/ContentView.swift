@@ -26,37 +26,12 @@ struct ContentView: View {
   var body: some View {
     ZStack {
       ObjectView()
-      
-      VStack {
-        Spacer()
-        
-        HStack {
-          Button {
-            // set to points
-          } label: {
-            Text("Points")
-          }
-          
-          Button {
-            // set to points
-          } label: {
-            Text("Wireframe")
-          }
-          
-          Button {
-            // set to points
-          } label: {
-            Text("Faces")
-          }
-        }
-      }
     }
   }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    
     ContentView()
   }
 }

@@ -9,41 +9,45 @@
 /* Begin PBXBuildFile section */
 		6F03E68229B46B8D00DEF533 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03E68129B46B8D00DEF533 /* ViewModel.swift */; };
 		6F03E68429B4723C00DEF533 /* SceneKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03E68329B4723C00DEF533 /* SceneKitView.swift */; };
-		6F03E68629B4E8B800DEF533 /* SetupStellarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F03E68529B4E8B800DEF533 /* SetupStellarScene.swift */; };
+		6F26E85729FF671500423F51 /* SCNNode+Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F26E85629FF671500423F51 /* SCNNode+Track.swift */; };
+		6F26E85929FF68DA00423F51 /* SCNGeometry+Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F26E85829FF68DA00423F51 /* SCNGeometry+Fibonacci.swift */; };
+		6F26E85B29FF6A2D00423F51 /* SCNScene+StellarSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F26E85A29FF6A2D00423F51 /* SCNScene+StellarSetup.swift */; };
+		6F26E85D29FF6C2B00423F51 /* Double+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F26E85C29FF6C2B00423F51 /* Double+Convert.swift */; };
+		6F5C745729FEAF7600DDCF43 /* SCNVector3+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5C745629FEAF7600DDCF43 /* SCNVector3+Codable.swift */; };
+		6F5C745929FEAFD500DDCF43 /* SCNVector3+DebugString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5C745829FEAFD500DDCF43 /* SCNVector3+DebugString.swift */; };
+		6F5C745B29FEB05E00DDCF43 /* StarSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5C745A29FEB05E00DDCF43 /* StarSystem.swift */; };
 		6F781DFE29897B6D005DB1CA /* BoxViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F781DFD29897B6D005DB1CA /* BoxViewerApp.swift */; };
 		6F781E0029897B6D005DB1CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F781DFF29897B6D005DB1CA /* ContentView.swift */; };
 		6F781E0229897B6E005DB1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F781E0129897B6E005DB1CA /* Assets.xcassets */; };
 		6F781E0529897B6E005DB1CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F781E0429897B6E005DB1CA /* Preview Assets.xcassets */; };
-		6F781E0E29898217005DB1CA /* CelestialBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F781E0D29898217005DB1CA /* CelestialBody.swift */; };
-		6FCDFC8D298AD75D00BD369F /* conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDFC8C298AD75D00BD369F /* conversions.swift */; };
-		6FCDFC8F298AF71D00BD369F /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDFC8E298AF71D00BD369F /* Points.swift */; };
-		6FCDFC91298B06B200BD369F /* OrbitTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDFC90298B06B200BD369F /* OrbitTrack.swift */; };
+		6F781E0E29898217005DB1CA /* OrbitalElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F781E0D29898217005DB1CA /* OrbitalElements.swift */; };
 		6FCDFC95298B1D0C00BD369F /* SpectralClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDFC94298B1D0C00BD369F /* SpectralClass.swift */; };
 		6FCDFC97298B1D2900BD369F /* StellarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDFC96298B1D2900BD369F /* StellarType.swift */; };
 		6FCDFC99298B1DD100BD369F /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDFC98298B1DD100BD369F /* Star.swift */; };
 		6FCDFC9C298B1E3800BD369F /* SCNVector3+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCDFC9B298B1E3800BD369F /* SCNVector3+Utils.swift */; };
-		6FE010FD29B2404300E73073 /* FiboSphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE010FC29B2404300E73073 /* FiboSphere.swift */; };
 		6FE0110129B39BA100E73073 /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE0110029B39BA100E73073 /* ObjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6F03E68129B46B8D00DEF533 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		6F03E68329B4723C00DEF533 /* SceneKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitView.swift; sourceTree = "<group>"; };
-		6F03E68529B4E8B800DEF533 /* SetupStellarScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupStellarScene.swift; sourceTree = "<group>"; };
+		6F26E85629FF671500423F51 /* SCNNode+Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNNode+Track.swift"; sourceTree = "<group>"; };
+		6F26E85829FF68DA00423F51 /* SCNGeometry+Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNGeometry+Fibonacci.swift"; sourceTree = "<group>"; };
+		6F26E85A29FF6A2D00423F51 /* SCNScene+StellarSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNScene+StellarSetup.swift"; sourceTree = "<group>"; };
+		6F26E85C29FF6C2B00423F51 /* Double+Convert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Convert.swift"; sourceTree = "<group>"; };
+		6F5C745629FEAF7600DDCF43 /* SCNVector3+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Codable.swift"; sourceTree = "<group>"; };
+		6F5C745829FEAFD500DDCF43 /* SCNVector3+DebugString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+DebugString.swift"; sourceTree = "<group>"; };
+		6F5C745A29FEB05E00DDCF43 /* StarSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSystem.swift; sourceTree = "<group>"; };
 		6F781DFA29897B6D005DB1CA /* BoxViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F781DFD29897B6D005DB1CA /* BoxViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewerApp.swift; sourceTree = "<group>"; };
 		6F781DFF29897B6D005DB1CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F781E0129897B6E005DB1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F781E0429897B6E005DB1CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6F781E0D29898217005DB1CA /* CelestialBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialBody.swift; sourceTree = "<group>"; };
-		6FCDFC8C298AD75D00BD369F /* conversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conversions.swift; sourceTree = "<group>"; };
-		6FCDFC8E298AF71D00BD369F /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
-		6FCDFC90298B06B200BD369F /* OrbitTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitTrack.swift; sourceTree = "<group>"; };
+		6F781E0D29898217005DB1CA /* OrbitalElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrbitalElements.swift; sourceTree = "<group>"; };
 		6FCDFC94298B1D0C00BD369F /* SpectralClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpectralClass.swift; sourceTree = "<group>"; };
 		6FCDFC96298B1D2900BD369F /* StellarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarType.swift; sourceTree = "<group>"; };
 		6FCDFC98298B1DD100BD369F /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 		6FCDFC9B298B1E3800BD369F /* SCNVector3+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Utils.swift"; sourceTree = "<group>"; };
-		6FE010FC29B2404300E73073 /* FiboSphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiboSphere.swift; sourceTree = "<group>"; };
 		6FE0110029B39BA100E73073 /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +85,6 @@
 				6FCDFC93298B1CE700BD369F /* Enums */,
 				6FCDFC92298B145A00BD369F /* Models */,
 				6FCDFC8B298AD73500BD369F /* SceneKit */,
-				6FCDFC8A298AD72100BD369F /* Utils */,
 				6FCDFC89298AD71100BD369F /* Views */,
 				6F781DFD29897B6D005DB1CA /* BoxViewerApp.swift */,
 				6F781E0129897B6E005DB1CA /* Assets.xcassets */,
@@ -107,22 +110,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		6FCDFC8A298AD72100BD369F /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				6FCDFC8C298AD75D00BD369F /* conversions.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		6FCDFC8B298AD73500BD369F /* SceneKit */ = {
 			isa = PBXGroup;
 			children = (
-				6FCDFC8E298AF71D00BD369F /* Points.swift */,
-				6FCDFC90298B06B200BD369F /* OrbitTrack.swift */,
-				6FE010FC29B2404300E73073 /* FiboSphere.swift */,
 				6F03E68329B4723C00DEF533 /* SceneKitView.swift */,
-				6F03E68529B4E8B800DEF533 /* SetupStellarScene.swift */,
 			);
 			path = SceneKit;
 			sourceTree = "<group>";
@@ -130,9 +121,10 @@
 		6FCDFC92298B145A00BD369F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				6F781E0D29898217005DB1CA /* CelestialBody.swift */,
+				6F781E0D29898217005DB1CA /* OrbitalElements.swift */,
 				6FCDFC98298B1DD100BD369F /* Star.swift */,
 				6F03E68129B46B8D00DEF533 /* ViewModel.swift */,
+				6F5C745A29FEB05E00DDCF43 /* StarSystem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +142,12 @@
 			isa = PBXGroup;
 			children = (
 				6FCDFC9B298B1E3800BD369F /* SCNVector3+Utils.swift */,
+				6F5C745629FEAF7600DDCF43 /* SCNVector3+Codable.swift */,
+				6F5C745829FEAFD500DDCF43 /* SCNVector3+DebugString.swift */,
+				6F26E85629FF671500423F51 /* SCNNode+Track.swift */,
+				6F26E85829FF68DA00423F51 /* SCNGeometry+Fibonacci.swift */,
+				6F26E85A29FF6A2D00423F51 /* SCNScene+StellarSetup.swift */,
+				6F26E85C29FF6C2B00423F51 /* Double+Convert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -224,20 +222,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FCDFC8D298AD75D00BD369F /* conversions.swift in Sources */,
+				6F26E85929FF68DA00423F51 /* SCNGeometry+Fibonacci.swift in Sources */,
 				6F781E0029897B6D005DB1CA /* ContentView.swift in Sources */,
-				6FE010FD29B2404300E73073 /* FiboSphere.swift in Sources */,
+				6F5C745729FEAF7600DDCF43 /* SCNVector3+Codable.swift in Sources */,
+				6F26E85D29FF6C2B00423F51 /* Double+Convert.swift in Sources */,
 				6FCDFC9C298B1E3800BD369F /* SCNVector3+Utils.swift in Sources */,
 				6FCDFC95298B1D0C00BD369F /* SpectralClass.swift in Sources */,
+				6F26E85729FF671500423F51 /* SCNNode+Track.swift in Sources */,
+				6F5C745B29FEB05E00DDCF43 /* StarSystem.swift in Sources */,
 				6FCDFC99298B1DD100BD369F /* Star.swift in Sources */,
 				6F03E68229B46B8D00DEF533 /* ViewModel.swift in Sources */,
 				6FCDFC97298B1D2900BD369F /* StellarType.swift in Sources */,
-				6F03E68629B4E8B800DEF533 /* SetupStellarScene.swift in Sources */,
+				6F5C745929FEAFD500DDCF43 /* SCNVector3+DebugString.swift in Sources */,
 				6F781DFE29897B6D005DB1CA /* BoxViewerApp.swift in Sources */,
-				6FCDFC8F298AF71D00BD369F /* Points.swift in Sources */,
 				6FE0110129B39BA100E73073 /* ObjectView.swift in Sources */,
-				6F781E0E29898217005DB1CA /* CelestialBody.swift in Sources */,
-				6FCDFC91298B06B200BD369F /* OrbitTrack.swift in Sources */,
+				6F26E85B29FF6A2D00423F51 /* SCNScene+StellarSetup.swift in Sources */,
+				6F781E0E29898217005DB1CA /* OrbitalElements.swift in Sources */,
 				6F03E68429B4723C00DEF533 /* SceneKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
